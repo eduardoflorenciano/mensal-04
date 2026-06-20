@@ -5,21 +5,21 @@ import service.camerasDeAr.interfaces.CamerasDeAr;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class CameraDeCaminhonete implements CamerasDeAr {
+public class CameraDeCarro implements CamerasDeAr {
     static Scanner scanner = new Scanner(System.in);
 
     public ArrayList<String> listarModelos() {
         ArrayList<String> lista = new ArrayList<>();
-        lista.add("Camara de ar 195/75 R16");
-        lista.add("Camara de ar 205/70 R15");
-        lista.add("Camara de ar 215/75 R16");
-        lista.add("Camara de ar 225/70 R16");
+        lista.add("Camara de ar Aro 13");
+        lista.add("Camara de ar Aro 14");
+        lista.add("Camara de ar Aro 15");
+        lista.add("Camara de ar Aro 16");
         return lista;
     }
 
     @Override
     public String escolherCamera() {
-        System.out.println("\n===== Camera de Ar Caminhonete =====");
+        System.out.println("\n===== Camera de Ar Carro =====");
         ArrayList<String> lista = listarModelos();
 
         for (int i = 0; i < lista.size(); i++) {
