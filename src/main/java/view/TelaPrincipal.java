@@ -19,27 +19,11 @@ import java.awt.event.ActionEvent;
 
 public class TelaPrincipal extends JFrame {
 
-    private final ClienteService clienteService;
-    private final AutomovelService automovelService;
-    private final ProdutoService produtoService;
-    private final ServicoService servicoService;
-    private final OrdemServicoService ordemServicoService;
-    private final GerenciadorUsuarioService usuarioService;
+
     private final Usuario usuarioLogado;
 
-    public TelaPrincipal(ClienteService clienteService,
-                         AutomovelService automovelService,
-                         ProdutoService produtoService,
-                         ServicoService servicoService,
-                         OrdemServicoService ordemServicoService,
-                         GerenciadorUsuarioService usuarioService,
+    public TelaPrincipal(
                          Usuario usuarioLogado) {
-        this.clienteService = clienteService;
-        this.automovelService = automovelService;
-        this.produtoService = produtoService;
-        this.servicoService = servicoService;
-        this.ordemServicoService = ordemServicoService;
-        this.usuarioService = usuarioService;
         this.usuarioLogado = usuarioLogado;
 
         configurarJanela();
