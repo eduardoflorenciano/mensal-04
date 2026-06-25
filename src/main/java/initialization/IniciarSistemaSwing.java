@@ -58,12 +58,6 @@ public class IniciarSistemaSwing {
             }
 
             TelaPrincipal telaPrincipal = new TelaPrincipal(
-                    clienteService,
-                    automovelService,
-                    produtoService,
-                    servicoService,
-                    ordemServicoService,
-                    usuarioService,
                     logado);
             telaPrincipal.setVisible(true);
         });
